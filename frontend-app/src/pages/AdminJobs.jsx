@@ -6,7 +6,7 @@ function AdminJobs() {
 
   useEffect(() => {
     axios
-      .get("https://student-placement-management-system-2.onrender.com/api/jobs")
+      .get("http://localhost:5000/api/jobs")   // ✅ changed here
       .then((res) => setJobs(res.data))
       .catch((err) => console.log(err));
   }, []);

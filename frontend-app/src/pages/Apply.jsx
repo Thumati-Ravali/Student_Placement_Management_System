@@ -20,7 +20,7 @@ function ApplyJob() {
     };
 
     await axios.post(
-      "https://student-placement-management-system-2.onrender.com/api/applications",
+      "http://localhost:5000/api/applications",   // ✅ changed here
       data
     );
 

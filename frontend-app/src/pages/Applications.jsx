@@ -6,7 +6,7 @@ function Applications() {
 
   useEffect(() => {
     axios
-      .get("https://student-placement-management-system-2.onrender.com/api/applications")
+      .get("http://localhost:5000/api/applications")   // ✅ changed here
       .then(res => {
         console.log("Applications:", res.data)
         setApps(res.data)

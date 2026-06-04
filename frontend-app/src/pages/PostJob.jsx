@@ -18,7 +18,7 @@ function PostJob() {
     };
 
     await axios.post(
-      "https://student-placement-management-system-2.onrender.com/api/jobs",
+      "http://localhost:5000/api/jobs",   // ✅ changed here
       job
     );
 

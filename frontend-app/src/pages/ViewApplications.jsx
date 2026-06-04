@@ -6,14 +6,14 @@ function ViewApplications() {
 
   useEffect(() => {
     axios
-      .get("https://student-placement-management-system-2.onrender.com/api/applications")
+      .get("http://localhost:5000/api/applications")
       .then(res => setApps(res.data))
       .catch(err => console.log(err));
   }, []);
 
   const updateStatus = async (id, status) => {
     await axios.put(
-      `https://student-placement-management-system-2.onrender.com/api/applications/${id}`,
+      `http://localhost:5000/api/applications/${id}`,
       { status }
     );
     window.location.reload();

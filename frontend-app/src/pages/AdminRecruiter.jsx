@@ -6,7 +6,7 @@ function AdminRecruiters() {
 
   useEffect(() => {
     axios
-      .get("https://student-placement-management-system-2.onrender.com/api/auth")
+      .get("http://localhost:5000/api/auth")   // ✅ changed here
       .then((res) => setUsers(res.data))
       .catch((err) => console.log(err));
   }, []);
